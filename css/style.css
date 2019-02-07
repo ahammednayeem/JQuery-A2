@@ -1,0 +1,15 @@
+h1{
+	text-align: center;
+	margin-top: 20px;
+	color: #5a49ea;
+}
+
+h3{
+	text-align: center;
+    background-color:gray;
+    color: white;
+	margin: 0 auto;
+	border: 2px solid gray;
+	margin-top: 20px;
+	margin-bottom:0px;
+}

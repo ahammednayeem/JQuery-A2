@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width">
+		<!-- bootstrap link -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<!-- css main theme -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>assignment-1</title>
+	</head>
+	<body style="background-color: #7bb4e6;">
+
+		<h1>Frequently Ask Question</h1>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="firsth">Question 1</h3>
+					<p class="firstp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="secondh">Question 2</h3>
+					<p class="secondp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="thirdh">Question 3</h3>
+					<p class="thirdp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+				</div>
+			</div>
+		</div>
+		<!-- jq library file -->	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- bootstrap link -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<!-- js file -->
+		<script type="text/javascript">
+
+			$(".firstp").hide();
+			$(".secondp").hide();
+			$(".thirdp").hide();
+
+			$(".firsth").click(function(){
+				$(".firstp").toggle(700);
+				$(".secondp").hide();
+				$(".thirdp").hide();
+			});
+			$(".secondh").click(function(){
+				$(".secondp").toggle(700);
+				$(".thirdp").hide();
+				$(".firstp").hide();
+			});
+			$(".thirdh").click(function(){
+				$(".thirdp").toggle(700);
+				$(".firstp").hide();
+				$(".secondp").hide();
+			});
+		</script>
+	</body>
+	</html>
